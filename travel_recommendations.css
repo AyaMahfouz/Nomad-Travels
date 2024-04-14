@@ -1,0 +1,64 @@
+/******************Navigation Panel******************/
+nav{
+    background-color:rgba(20,20,20,80%);
+    color:white;
+    height:50px;
+    width:100%;
+    padding: auto;
+}
+.siteIcon{
+    width:45px;
+    height:45px;
+    display:inline;
+    vertical-align: middle;
+    margin:7px;
+}
+.siteName,ul{
+    display:inline-block;
+}
+nav ul li{
+    display:inline;
+}
+nav ul li .navPage{
+    color:white;
+    text-decoration: none;
+    padding:10px;
+    text-align:right;
+    vertical-align: middle;
+    font-size:18px;
+}
+.siteName{
+    margin:5px;
+    padding:0px;
+    text-align: left;
+    width:49%;
+    vertical-align: middle;
+    font-size:28px;
+}
+.navSitePages{
+    text-align: center;
+}
+::placeholder{
+    color:teal;
+}
+#searchField{
+    border-radius:10px;
+    height:25px;
+    width:250px;
+    padding:0;
+    margin:0;
+}
+#searchBtn,#resetBtn{
+    border-radius:10px;
+    height:25px;
+    background-color:teal;
+    color:white;
+}
+/******************Main******************/
+body{
+    height:100%;
+}
+main{
+    background:url(https://frontenacarchbiosphere.ca/wp-content/uploads/2023/02/full-shot-travel-concept-with-landmarks-1536x864.jpg.webp);
+    height:100%;
+}
