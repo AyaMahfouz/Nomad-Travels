@@ -51,8 +51,8 @@ nav ul li .navPage{
     text-align: center;
     margin-bottom: 0px;
 }
-::placeholder{
-    color:#00a3f0;
+#searchField::placeholder{
+    color:teal;
 }
 #searchField{
     border-radius:10px;
@@ -64,48 +64,27 @@ nav ul li .navPage{
 #searchBtn,#resetBtn{
     border-radius:10px;
     height:25px;
-    background-color:#00a3f0;
+    background-color:teal;
     color:white;
-    margin-bottom: 0px;
+    margin: 0px;
 }
 
 
-/******************Main******************/
+/******************Basic Container******************/
 body, html {
-    height: 97%;
+    height: 100%;
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden; 
   }
 .container{
     margin:0;
     padding:0;
-    background-image:url('images/NomadTravels_Background.jpg');
-    height:100%;
+    background-image:url('images/NomadTravels_Background2.jpg');
     background-size: cover;
-    position:relative;
-    top:-40px;
-}
-.homePagetitle,.homePagePar,.bookNowBtn{
-    position:relative;
-    left:115px;
-    top:120px;
-}
-.homePagetitle{
-    width:200px;
-    font-size:55px;
-    font-family: serif;
-}
-.homePagePar{
-    width:300px;
-    font-size:14px;
-    font-family: serif;
-}
-.bookNowBtn{
-    background-color:rgba(20,20,20,50%);
-    border-radius:10px;
-    font-size:20px;
-    padding:5px;
-    color:white;
+    opacity:80%;
+    height:97%;
+    background-size: cover;
 }
 .socialMediaPlatforms{
     position: fixed;
@@ -119,4 +98,174 @@ div ul{
     width:35px;
     height:35px;
     margin-bottom:20px;
+}
+/******************Home******************/
+.homePagetitle,.homePagePar,.bookNowBtn{
+    position:relative;
+    left:115px;
+    top:80px;
+}
+.homePagetitle{
+    width:300px;
+    font-size:70px;
+    font-family: Copperplate,ariel;
+    padding:0;
+    margin:0;
+    font-weight: bold;
+    color:rgba(30,30,30);
+}
+.homePagePar{
+    width:330px;
+    font-size:16px;
+    font-family: serif;
+    color:white;
+}
+.bookNowBtn{
+    background-color:rgba(20,20,20,50%);
+    border-radius:10px;
+    font-size:20px;
+    padding:5px;
+    color:white;
+}
+/******************About Us******************/
+.aboutUsPagetitle,.aboutUsPagePar{
+    position:relative;
+    left:115px;
+    top:115px;
+}
+.aboutUsPagetitle{
+    width:400px;
+    font-size:70px;
+    font-family: Copperplate,ariel;
+    padding:0;
+    margin:0;
+    font-weight: bold;
+    color:rgba(30,30,30);
+}
+.aboutUsPagePar{
+    width:60%;
+    font-size:16px;
+    font-family: serif;
+    color:white;
+    margin-top:30px;
+}
+
+.ourTeam{
+    position:relative;
+    left:115px;
+    top:135px;
+}
+.ourTeamtitle{
+    width:50px;
+    font-size:60px;
+    font-family: Copperplate,ariel;
+    padding:0;
+    margin:0;
+    font-weight: bold;
+    color:rgba(20,20,20);
+}
+
+.ourTeamtitle, .teamMember{
+    display:inline-block;
+    height: 100px;
+}
+
+.teamMember{
+    display:inline-block;
+    background-color:rgba(10,10,10,20%);
+    border-radius: 10px;
+    height:auto;
+    position: relative;
+    left:200px;
+    margin: 0px 20px;
+    padding:10px;
+    width:150px;
+}
+.teamMember p{
+    color:rgba(245,245,245,80%);
+    text-align: center;
+}
+.teamMemberPos{
+    background-color:rgba(20,20,20,50%);
+    border-radius:5px;
+    color:rgba(245,245,245,80%);;
+    width:70%;
+    border-color: rgba(245,245,245,80%);;
+    text-align: center;
+    margin:0 12%;
+    padding:2px;
+}
+.teamMemberPos.disabled{
+    pointer-events: none;
+  }
+h4{
+    padding:0;
+    margin:5px;
+    margin-left:0;
+    font-size:18px;
+    font-family: serif;
+    text-align: center;
+}
+/******************Contact Us******************/
+.contactUsPagetitle{
+    font-size:60px;
+    font-family: Copperplate,ariel;
+    padding:0;
+    margin:0;
+    font-weight: bold;
+    color:rgba(20,20,20);
+    position:relative;
+    top:50px;
+    left:120px;
+
+}
+.contactUsForm{
+    background-color:rgba(10,10,10,20%);
+    position:relative;
+    left:115px;
+    top:135px;
+    top:70px;
+    width:40%;
+    padding:3px;
+    margin:5px;
+}
+.formLabel{
+    font-size:18px;
+    margin-bottom:2%;
+    margin-left:1%;
+    padding:2px;
+}
+.formInput{
+    width:96%;
+    height:30px;
+    margin: 1%;
+    background-color:rgba(10,10,10,10%);
+    color:white;
+    border-color: rgba(245,245,245,80%);
+    border-style: solid;
+    border-radius:10px;
+    
+}
+.formInput::placeholder{
+    color:rgba(245,245,245,80%);
+    font-size:14px;
+}
+#messageText{
+    height:200px;
+}
+
+#messageText::placeholder{
+    vertical-align: top;
+    text-align: left;
+}
+.formBtn{
+    width:97%;
+    height:30px;
+    margin:1%;
+    background-color:teal;
+    color:rgb(245,245,245);
+    border-style: solid;
+    border-radius:10px;
+    border-style: solid;
+    border-color: rgba(245,245,245,80%);
 }
