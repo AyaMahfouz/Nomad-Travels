@@ -1,5 +1,8 @@
 function search(){    
     console.log("entered search fn");
+    document.getElementById('searchResults').remove();
+    document.getElementById('searchResults').remove();
+    console.log("deleted existing results");
     
     const container = document.getElementById('container');
     const searchKey= document.getElementById("searchField").value.toLowerCase();
