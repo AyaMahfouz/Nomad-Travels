@@ -1,5 +1,6 @@
-
 function search(){    
+    console.log("entered search fn");
+    
     const container = document.getElementById('container');
     const searchKey= document.getElementById("searchField").value.toLowerCase();
     if(searchKey=="beach" || searchKey=="beaches"){
