@@ -57,8 +57,9 @@ nav ul li .navPage{
 #searchField{
     border-radius:10px;
     height:25px;
-    width:250px;
+    width:245px;
     padding:0;
+    padding-left:5px;
     margin:0;
 }
 #searchBtn,#resetBtn{
@@ -84,7 +85,6 @@ body, html {
     background-size: cover;
     opacity:80%;
     height:97%;
-    background-size: cover;
 }
 .socialMediaPlatforms{
     position: fixed;
@@ -268,4 +268,27 @@ h4{
     border-radius:10px;
     border-style: solid;
     border-color: rgba(245,245,245,80%);
+}
+/******************Search Results******************/
+.searchResults{
+    position:relative;
+    width: 400px;
+    height:300px;
+    top:-390px;
+    left:950px;
+    padding:5px;
+    border-radius:10px;
+    margin:20px;
+    background-color: white;;
+}
+.resImg{
+    height: 55%;
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+.visitBtn{
+    border-radius:10px;
+    background-color:teal;
+    color:white;
 }
