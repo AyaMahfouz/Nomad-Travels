@@ -1,7 +1,8 @@
 
 function search(){
-    clearBtn();
-    syncWait(2000);
+    for(vari=0;i<2;i++){
+        document.querySelectorAll("div.searchResults").remove();
+    }
     
     const container = document.getElementById('container');
     const searchKey= document.getElementById("searchField").value.toLowerCase();
