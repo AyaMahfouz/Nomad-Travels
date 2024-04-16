@@ -1,7 +1,5 @@
 
 function search(){    
-    document.getElementById("searchResults").remove();
-    document.getElementById("searchResults").remove();
     const container = document.getElementById('container');
     const searchKey= document.getElementById("searchField").value.toLowerCase();
     if(searchKey=="beach" || searchKey=="beaches"){
