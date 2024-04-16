@@ -53,29 +53,30 @@ function search(){
 }
 
 function addResDiv(img,name,desc){
+        
     const searchRes = document.createElement('div');
-        searchRes.setAttribute("class","searchResults");
-        searchRes.setAttribute("id","searchResults");
+    searchRes.setAttribute("class","searchResults");
+    searchRes.setAttribute("id","searchResults");
 
-        const imgRes = document.createElement('img');
-        imgRes.setAttribute("class","resImg");
-        imgRes.src=img;
+    const imgRes = document.createElement('img');
+    imgRes.setAttribute("class","resImg");
+    imgRes.src=img;
 
-        const nameRes = document.createElement('h3');
-        nameRes.textContent = name;
+    const nameRes = document.createElement('h3');
+    nameRes.textContent = name;
 
-        const desRes = document.createElement('p');
-        desRes.textContent = desc;
+    const desRes = document.createElement('p');
+    desRes.textContent = desc;
 
-        const visitBtnRes = document.createElement('button');
-        visitBtnRes.setAttribute("class","visitBtn");
-        visitBtnRes.textContent = "Visit";
+    const visitBtnRes = document.createElement('button');
+    visitBtnRes.setAttribute("class","visitBtn");
+    visitBtnRes.textContent = "Visit";
 
-        container.appendChild(searchRes);
-        searchRes.appendChild(imgRes);
-        searchRes.appendChild(nameRes);
-        searchRes.appendChild(desRes);
-        searchRes.appendChild(visitBtnRes);
+    container.appendChild(searchRes);
+    searchRes.appendChild(imgRes);
+    searchRes.appendChild(nameRes);
+    searchRes.appendChild(desRes);
+    searchRes.appendChild(visitBtnRes);
 }
 
 function clearBtn(){
