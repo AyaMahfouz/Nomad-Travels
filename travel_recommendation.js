@@ -1,7 +1,6 @@
 function search(){    
     console.log("entered search fn");
-    document.getElementById('searchResults').remove();
-    document.getElementById('searchResults').remove();
+    removeDivs("searchResults");
     console.log("deleted existing results");
     
     const container = document.getElementById('container');
@@ -85,6 +84,13 @@ function clearBtn(){
     document.getElementById("searchField").value = "";
     const resDiv = document.querySelectorAll("div.searchResults");
     resDiv.forEach(div => div.remove());
+}
+
+function removeDivs(className){
+    const elements = document.getElementsByClassName(className);
+    while(elements.length > 0){
+        elements[0].parentNode.removeChild(elements[0]);
+    }
 }
 
 document.getElementById("searchBtn").addEventListener('click',search);
