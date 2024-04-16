@@ -1,6 +1,7 @@
 
 function search(){
     clearBtn();
+    syncWait(2000);
     
     const container = document.getElementById('container');
     const searchKey= document.getElementById("searchField").value.toLowerCase();
