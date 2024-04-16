@@ -1,10 +1,8 @@
 
-function search(){
-    for(vari=0;i<2;i++){
-        document.querySelectorAll("div.searchResults").remove();
-    }
-    
+function search(){    
     const container = document.getElementById('container');
+    const div = document.getElementById('searchResults');
+    div.parentNode.removeChild(div);
     const searchKey= document.getElementById("searchField").value.toLowerCase();
     if(searchKey=="beach" || searchKey=="beaches"){
         fetch("travel_recommendation_api.json")
