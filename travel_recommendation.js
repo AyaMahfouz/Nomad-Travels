@@ -53,6 +53,7 @@ function search(){
 function addResDiv(img,name,desc){
     const searchRes = document.createElement('div');
         searchRes.setAttribute("class","searchResults");
+        searchRes.setAttribute("id","searchResults");
 
         const imgRes = document.createElement('img');
         imgRes.setAttribute("class","resImg");
@@ -75,4 +76,11 @@ function addResDiv(img,name,desc){
         searchRes.appendChild(visitBtnRes);
 }
 
+function clearBtn(){
+    document.getElementById("searchField").value = "";
+    const resDiv = document.querySelectorAll("div.searchResults");
+    resDiv.forEach(div => div.remove());
+}
+
 document.getElementById("searchBtn").addEventListener('click',search);
+document.getElementById("resetBtn").addEventListener('click',clearBtn);
