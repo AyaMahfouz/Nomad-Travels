@@ -1,6 +1,6 @@
 
 function search(){
-    const resDiv = document.querySelectorAll("div.searchResults").innerHTML = '';
+    clearBtn();
     
     const container = document.getElementById('container');
     const searchKey= document.getElementById("searchField").value.toLowerCase();
